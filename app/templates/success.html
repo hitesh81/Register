@@ -1,0 +1,12 @@
+{% load static %}
+<h1>hello</h1>
+    <p>record show  </p>
+    <div class="container info-boxes pt100 pb100">
+    {% for r in s %}
+        <p>{{ r.fname }}</p>
+        <p>{{ r.lname }}</p>
+        <p>{{ r.email }}</p>
+        <p>{{ r.password }}</p>
+    {% endfor %}
+</div>
+{% csrf_token %}
